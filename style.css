@@ -20,4 +20,16 @@
 nav {
   width: 100%;
   padding: 10px 5%;
+  display: flex;
+  background: #fff;
+  max-height: 70px;
+}
+
+nav img {
+  width: 100px;
+  height: auto;
+}
+
+nav label {
+  flex: 1;
 }
