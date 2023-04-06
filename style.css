@@ -166,7 +166,7 @@ nav img {
   background: rgb(81, 81, 245);
 }
 
-.LHS:hover::after {
+.btnframe span:hover .LHS:hover::after {
   content: "";
   width: 1px;
   height: 50%;
@@ -190,7 +190,11 @@ nav img {
   position: relative;
 }
 
-.RHS:hover::after {
+.btnframe span:hover {
+  display: none;
+}
+
+.btnframe span:hover .RHS:hover::after {
   content: "";
   width: 1px;
   height: 50%;
