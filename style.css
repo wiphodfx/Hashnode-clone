@@ -19,31 +19,115 @@
 
 nav {
   width: 100%;
-  padding: 10px 5%;
+  padding: 10px 2.5%;
   display: flex;
   align-items: center;
-  background: #fff;
-  max-height: 70px;
+  background: #fefefe;
+  max-height: 60px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 nav img {
-  width: 100px;
+  width: 135px;
   height: auto;
 }
 
 .nav-links {
   display: flex;
+  align-items: center;
   flex: 1;
+  padding: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 25px;
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: blue;
+  display: flex;
+  align-items: center;
+  transition: border 0.5s, background 0.5s;
+}
+.nav-links a.active {
+  border: solid 1px var(--border-color);
+}
+.nav-links a:hover {
+  background-color: var(--border-color);
+}
+
+.nav-links a span {
+  font-size: 10px;
+  padding: 2px;
+  background: blue;
+  text-align: center;
+  color: #fff;
+  border-radius: 18px;
+  font-weight: 500;
+  margin-left: 3px;
 }
 
 .nav-links label {
   flex: 1;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.nav-links input {
+  width: 95%;
+  padding: 8px;
+  border-radius: 25px;
+  outline: 0;
+  border: 0;
+}
+
+.nav-links input:hover {
+  border: 1px solid var(--border-color);
+}
+
+::placeholder {
+  font-size: 14px;
+  padding-left: 25px;
+  color: #ccc;
 }
 
 .nav-links label .fa-solid {
   font-size: 15px;
+  position: absolute;
+  left: 10px;
+  color: #ccc;
+  top: 30%;
+}
+
+.btnSetup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnSetup .fa-moon,
+.btnSetup .fa-code-branch,
+.btnSetup .fa-bell {
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #000;
+  border-color: black;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btnSetup .fa-moon:hover,
+.btnSetup .fa-code-branch:hover,
+.btnSetup .fa-bell:hover {
+  background: var(--border-color);
 }
 
 .btnframe {
@@ -56,10 +140,9 @@ nav img {
   color: #fff;
 }
 
-.penIcon {
-  width: 10px;
-  margin-right: 8px;
+.LHS .fa-solid {
   color: #fff;
+  margin-right: 5px;
 }
 
 .LHS {
@@ -97,8 +180,13 @@ nav img {
 .RHS {
   outline: 0;
   border: 0;
+  width: 30%;
+  height: 30px;
+  text-align: left;
+  padding: 5px;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
+  background-color: transparent;
   position: relative;
 }
 
@@ -106,8 +194,8 @@ nav img {
   content: "";
   width: 1px;
   height: 50%;
-  background-color: #fff;
   left: 0;
+  background-color: #fff;
   top: 25%;
   position: absolute;
   cursor: pointer;
@@ -115,4 +203,22 @@ nav img {
 
 .RHS:hover {
   background: rgb(81, 81, 245);
+}
+
+.RHS .fa-solid {
+  color: #fff;
+}
+
+.userProfile span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: brown;
+  color: #fff;
+  cursor: pointer;
 }
