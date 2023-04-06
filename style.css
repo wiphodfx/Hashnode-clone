@@ -33,6 +33,7 @@ nav img {
 
 .nav-links {
   display: flex;
+  flex: 1;
 }
 
 .nav-links label {
@@ -41,7 +42,7 @@ nav img {
   align-items: center;
 }
 
-.nav-links .fa-solid {
+.nav-links label .fa-solid {
   font-size: 15px;
 }
 
@@ -49,19 +50,20 @@ nav img {
   width: 80px;
   height: 30px;
   border-radius: 18px;
-  background: #ccc;
+  background: blue;
   display: flex;
   align-items: center;
-  padding: 5px;
+  color: #fff;
 }
 
 .penIcon {
   width: 10px;
   margin-right: 8px;
+  color: #fff;
 }
 
 .LHS {
-  flex: 1;
+  flex-basis: 70%;
   display: flex;
   align-items: center;
   height: 30px;
@@ -72,15 +74,22 @@ nav img {
   background: transparent;
   font-size: 12px;
   position: relative;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.LHS:hover {
+  background: rgb(81, 81, 245);
 }
 
 .LHS:hover::after {
-  content: 0;
+  content: "";
   width: 1px;
   height: 50%;
   background-color: #fff;
-  right: -3px;
-  top: 50%;
+  right: 0;
+  top: 25%;
   position: absolute;
   cursor: pointer;
 }
@@ -90,4 +99,20 @@ nav img {
   border: 0;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
+  position: relative;
+}
+
+.RHS:hover::after {
+  content: "";
+  width: 1px;
+  height: 50%;
+  background-color: #fff;
+  left: 0;
+  top: 25%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.RHS:hover {
+  background: rgb(81, 81, 245);
 }
