@@ -265,7 +265,6 @@ nav img {
   position: sticky;
   flex-basis: 18%;
   background: rgb(255 255 255 / var(--tw-bg-opacity));
-  min-height: 100vh;
   border-width: 2px;
   border: 2px solid rgb(226 232 240 / 80%);
   border-color: rgb(226 232 240 / 80%);
