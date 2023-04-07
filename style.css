@@ -373,7 +373,7 @@ nav img {
 
 .centerFrame {
   flex-basis: 58%;
-  max-width: 530px;
+  max-width: 630px;
   /* background: rgb(255 255 255 / var(--tw-bg-opacity)); */
   background: transparent;
   min-height: 100vh;
