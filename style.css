@@ -258,7 +258,7 @@ nav img {
   justify-content: space-between;
   width: 100%;
   background: transparent;
-  padding: 20px 10px;
+  padding: 15px 10px;
 }
 
 .leftFrame {
@@ -313,9 +313,67 @@ nav img {
   /* margin-left: 15px; */
 }
 
+.leftFrame hr {
+  margin: 15px auto;
+  padding: 0 10px;
+  width: 90%;
+  border: 1px solid rgb(226 232 240 / 80%);
+}
+
+/* Trend section styling */
+
+.trendSection {
+  width: 100%;
+}
+
+.trendSection h3 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.trendSection .fa-arrow-trend-up {
+  color: rgb(220 230 240 / 130%);
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.trendSection div {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 8px;
+  font-size: 10px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.trendSection div:hover {
+  background-color: rgb(226 232 240 / 80%);
+}
+
+.trendSection p {
+  max-width: 80px;
+  color: var(--font-color);
+}
+
+.trendSection span {
+  padding: 3px 8px;
+  background: rgb(226 232 240 / 80%);
+  border-radius: 10px;
+  color: #303030;
+  font-weight: 500;
+}
+
+.trendSection div a {
+  text-decoration: none;
+}
+
 .centerFrame {
-  flex-basis: 50%;
-  max-width: 500px;
+  flex-basis: 58%;
+  max-width: 530px;
   /* background: rgb(255 255 255 / var(--tw-bg-opacity)); */
   background: transparent;
   min-height: 100vh;
