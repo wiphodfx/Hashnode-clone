@@ -250,3 +250,36 @@ nav img {
   color: #fff;
   cursor: pointer;
 }
+
+/* main styling */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  padding: 20px 10px;
+}
+
+.leftFrame {
+  position: sticky;
+  flex-basis: 18%;
+  background: rgb(255 255 255 / var(--tw-bg-opacity));
+  min-height: 100vh;
+  border-width: 1px;
+  border-color: rgb(226 232 240 / 80%);
+}
+.centerFrame {
+  flex-basis: 59%;
+  background: rgb(255 255 255 / var(--tw-bg-opacity));
+  min-height: 100vh;
+  border-width: 1px;
+  border-color: rgb(226 232 240 / 80%);
+}
+
+.rightFrame {
+  flex-basis: 20%;
+  background: rgb(255 255 255 / var(--tw-bg-opacity));
+  border-width: 1px;
+  border-color: rgb(226 232 240 / 80%);
+}
