@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
 
 :root {
@@ -9,6 +13,7 @@
   --border-color: rgb(226 232 240 / 80%);
   --tw-opacity: 1;
   --font-color: rgb(15 23 42 / var(--tw-opacity));
+  --tw-bg-opacity: 1;
 }
 
 .hero {
@@ -22,9 +27,10 @@ nav {
   padding: 10px 2.5%;
   display: flex;
   align-items: center;
-  background: #fefefe;
+  border-width: 1px;
+  background: rgb(255 255 255 / var(--tw-bg-opacity));
   max-height: 60px;
-  border-bottom: 1px solid var(--border-color);
+  border-color: rgb(226 232 240 / 80%);
 }
 
 nav img {
@@ -37,69 +43,82 @@ nav img {
   align-items: center;
   flex: 1;
   padding: 0 10px;
+  margin-left: 20px;
 }
 
 .nav-links a {
   text-decoration: none;
-  padding: 8px;
+  padding: 8px 13px;
   border-radius: 25px;
   margin-right: 8px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  color: blue;
+  color: rgb(37 99 235);
   display: flex;
   align-items: center;
   transition: border 0.5s, background 0.5s;
 }
+
+.nav-links a:nth-child(2) {
+  color: #000;
+}
+
 .nav-links a.active {
   border: solid 1px var(--border-color);
 }
 .nav-links a:hover {
-  background-color: var(--border-color);
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 .nav-links a span {
-  font-size: 10px;
-  padding: 2px;
-  background: blue;
+  font-size: 11px;
+  padding: 0px 5px;
+  background: linear-gradient(to bottom right, #2563eb, #9333ea);
+  align-items: center;
+  display: flex;
+  justify-content: center;
   text-align: center;
   color: #fff;
   border-radius: 18px;
-  font-weight: 500;
-  margin-left: 3px;
+  font-weight: 600;
+  margin-left: 6px;
 }
 
-.nav-links label {
+.searchField {
   flex: 1;
   display: flex;
   align-items: center;
   border: 0;
+  margin: 6px;
   outline: none;
   position: relative;
+  background: transparent;
 }
 
-.nav-links input {
-  width: 95%;
-  padding: 8px;
-  border-radius: 25px;
-  outline: none;
+.searchField input {
+  width: 100%;
+  padding: 8px 25px;
   border: 0;
-  transition: all 0.5s;
+  outline: none;
+  border-radius: 25px;
+  background: transparent;
+  font-size: 12px;
+  color: #999;
+  transition: border 0.5s;
+  margin-right: 8px;
 }
 
-.nav-links input:hover {
-  border: 0.2px solid #ccc;
-  opacity: 0.5;
+.searchField input:hover {
+  border: 0.02px solid rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 ::placeholder {
-  font-size: 14px;
-  padding-left: 25px;
+  font-size: 12px;
   color: #ccc;
 }
 
-.nav-links label .fa-solid {
-  font-size: 15px;
+.searchField .fa-solid {
+  font-size: 12px;
   position: absolute;
   left: 10px;
   color: #ccc;
@@ -126,6 +145,7 @@ nav img {
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .btnSetup .fa-moon:hover,
@@ -135,10 +155,10 @@ nav img {
 }
 
 .btnframe {
-  width: 80px;
-  height: 30px;
+  width: 90px;
+  height: 32px;
   border-radius: 18px;
-  background: blue;
+  background: rgb(37 99 235);
   display: flex;
   align-items: center;
   color: #fff;
@@ -153,7 +173,7 @@ nav img {
   flex-basis: 70%;
   display: flex;
   align-items: center;
-  height: 30px;
+  height: 100%;
   border-top-left-radius: 18px;
   border-bottom-left-radius: 18px;
   outline: 0;
@@ -167,10 +187,10 @@ nav img {
 }
 
 .LHS:hover {
-  background: rgb(81, 81, 245);
+  background: rgb(59 130 246);
 }
 
-.btnframe span:hover .LHS:hover::after {
+.btnframe .pipe:hover.LHS:hover::after {
   content: "";
   width: 1px;
   height: 50%;
@@ -194,11 +214,11 @@ nav img {
   position: relative;
 }
 
-.btnframe span:hover {
+.btnframe .pipe:hover {
   display: none;
 }
 
-.btnframe span:hover .RHS:hover::after {
+.btnframe .pipe:hover .RHS:hover::after {
   content: "";
   width: 1px;
   height: 50%;
@@ -210,7 +230,7 @@ nav img {
 }
 
 .RHS:hover {
-  background: rgb(81, 81, 245);
+  background: rgb(59 130 246);
 }
 
 .RHS .fa-solid {
