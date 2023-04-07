@@ -19,7 +19,7 @@
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--border-color);
+  background-color: rgba(241, 245, 249, 1);
 }
 
 nav {
@@ -270,6 +270,48 @@ nav img {
   border-color: rgb(226 232 240 / 80%);
   border-radius: 8px;
 }
+
+.navBarFrame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 10px; */
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  text-align: left;
+  padding: 8px 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.navBar:first-child {
+  margin-top: 5px;
+}
+
+.navBar:hover {
+  background-color: rgb(241 245 249);
+}
+
+.navBar .fa-solid {
+  text-align: left;
+}
+
+.navBar p {
+  flex: 1;
+  float: left;
+  max-width: 130px;
+  text-align: left;
+  /* background: red; */
+  /* margin-left: 15px; */
+}
+
 .centerFrame {
   flex-basis: 50%;
   max-width: 500px;
@@ -316,10 +358,13 @@ nav img {
   border-radius: 50%;
   padding: 2px;
   margin: 3px;
-  border: 2px solid #2563eb;
   cursor: pointer;
   transition: 0.5s;
   /* position: relative; */
+}
+
+.userUpdate .newUpload {
+  border: 2px solid #2563eb;
 }
 
 .userUpdate .fav-icon::after {
