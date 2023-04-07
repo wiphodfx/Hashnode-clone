@@ -266,7 +266,8 @@ nav img {
   flex-basis: 18%;
   background: rgb(255 255 255 / var(--tw-bg-opacity));
   min-height: 100vh;
-  border-width: 1px;
+  border-width: 2px;
+  border: 2px solid rgb(226 232 240 / 80%);
   border-color: rgb(226 232 240 / 80%);
   border-radius: 8px;
 }
@@ -296,7 +297,7 @@ nav img {
 }
 
 .navBar:hover {
-  background-color: rgb(241 245 249);
+  background-color: rgb(241 245 249/1.4);
 }
 
 .navBar .fa-solid {
@@ -331,6 +332,8 @@ nav img {
   margin-bottom: 20px;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+  border: 2px solid rgb(226 232 240 / 80%);
+  border-color: rgb(226 232 240 / 80%);
 }
 .galleryFrame {
   height: 100%;
@@ -416,12 +419,15 @@ nav img {
   border-radius: 8px;
   background: rgb(255 255 255 / var(--tw-bg-opacity));
   /* background: red; */
+  border: 2px solid rgb(226 232 240 / 80%);
+  border-color: rgb(226 232 240 / 80%);
 }
 
 .rightFrame {
   flex-basis: 25%;
   background: rgb(255 255 255 / var(--tw-bg-opacity));
   border-width: 1px;
-  border-color: rgb(226 232 240 / 80%);
   border-radius: 8px;
+  border: 2px solid rgb(226 232 240 / 80%);
+  border-color: rgb(226 232 240 / 80%);
 }
