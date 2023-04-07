@@ -268,18 +268,47 @@ nav img {
   min-height: 100vh;
   border-width: 1px;
   border-color: rgb(226 232 240 / 80%);
+  border-radius: 8px;
 }
 .centerFrame {
-  flex-basis: 59%;
-  background: rgb(255 255 255 / var(--tw-bg-opacity));
+  flex-basis: 54%;
+  /* background: rgb(255 255 255 / var(--tw-bg-opacity)); */
+  background: transparent;
   min-height: 100vh;
   border-width: 1px;
   border-color: rgb(226 232 240 / 80%);
+  border-radius: 8px;
+  /* padding-bottom: 2000px; */
+}
+
+.gallerySlider {
+  width: 100%;
+  height: 20%;
+  border-radius: 8px;
+  background: rgb(255 255 255 / var(--tw-bg-opacity));
+  overflow-x: scroll;
+  margin-bottom: 20px;
+}
+
+.gallerySlider::-webkit-scrollbar {
+  content: "";
+  height: 7px;
+  width: 50px;
+  background: #ccc;
+}
+
+.updateSection {
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 8px;
+  background: rgb(255 255 255 / var(--tw-bg-opacity));
+  /* background: red; */
 }
 
 .rightFrame {
-  flex-basis: 20%;
+  flex-basis: 25%;
   background: rgb(255 255 255 / var(--tw-bg-opacity));
   border-width: 1px;
   border-color: rgb(226 232 240 / 80%);
+  border-radius: 8px;
 }
