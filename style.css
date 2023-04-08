@@ -248,14 +248,8 @@ nav a {
 .nav-links .social-links .fa-regular,
 .nav-links .social-links .fa-solid {
   font-size: 14px;
-}
-
-.nav-links .social-links div {
-  min-width: 120px;
-  text-align: left;
-  align-items: flex-start;
-  /* background-color: #094282; */
-  margin-left: 5px;
+  text-align: center;
+  flex-basis: 20%;
 }
 
 .nav-links .social-links img {
@@ -265,6 +259,13 @@ nav a {
 
 .nav-links .social-links a {
   cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+}
+
+.nav-links .social-links div {
+  flex-basis: 80%;
+  /* background-color: #094282; */
 }
 
 .left-side-bar hr {
