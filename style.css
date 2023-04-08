@@ -327,9 +327,50 @@ nav a {
   border-radius: 18px;
 }
 
+/* -----------------END OF LHS--------------- */
+
 .center-content {
   flex-basis: 57%;
 }
+
+.gallery-frame {
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery {
+  max-width: 550px;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  border: 1px solid #5f5f5f53;
+  border-radius: 8px;
+  padding: 10px 5px;
+}
+
+.gallery img {
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #2563eb;
+  padding: 2px;
+  margin: 5px;
+}
+
+.online {
+  position: relative;
+}
+
+.online::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+/* ----------------------END OF CENTER----------------- */
 
 .right-side-bar {
   flex-basis: 25%;
