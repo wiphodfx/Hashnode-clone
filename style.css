@@ -133,7 +133,7 @@ nav a {
 }
 
 .postBtn a:first-child:hover {
-  background: #094282;
+  background: rgb(59 130 246 / var(--tw-bg-opacity));
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -156,7 +156,7 @@ nav a {
 }
 
 .postBtn a:last-child:hover {
-  background: #094282;
+  background: rgb(59 130 246 / var(--tw-bg-opacity));
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -189,13 +189,20 @@ nav a {
   align-items: center;
 }
 
-.notifications img {
+.notifications .fa-solid,
+.notifications .fa-regular {
+  margin: 2px;
   width: 30px;
+  height: 30px;
   border-radius: 50%;
-  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.notifications img:hover {
+.notifications .fa-solid:hover,
+.notifications .fa-regular:hover {
   background: #f0f2f5;
 }
 
