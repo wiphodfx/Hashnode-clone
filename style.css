@@ -17,7 +17,7 @@ body {
 }
 
 .navBar {
-  padding: 8px 4%;
+  padding: 8px 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,16 +62,17 @@ nav a {
 }
 
 .navBar .center {
-  min-width: 300px;
+  width: 350px;
 }
 
 .searchBar {
   display: flex;
   align-items: center;
-  width: 100%;
   border-radius: 20px;
   background: #fff;
-  padding: 0px 10px;
+  padding: 0px 8px;
+  outline: 0;
+  border: 0;
   /* transition: 0.5s; */
 }
 
@@ -86,7 +87,7 @@ nav a {
 }
 
 .searchBar input {
-  padding: 10px;
+  padding: 5px;
   outline: none;
   border: 0;
   background: transparent;
@@ -94,7 +95,7 @@ nav a {
 }
 
 .searchBar:hover {
-  border: 1px solid #f0f2f0;
+  border: 1px solid #f0f2f5;
 }
 
 .right-navBarside {
