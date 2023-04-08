@@ -4,201 +4,141 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hasnode clone - winsofttutorials</title>
-    <!-- js kit -->
+    <title>Hashnode-clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- -----------Font awesome kit link----------- -->
     <script
       src="https://kit.fontawesome.com/00f0886e17.js"
       crossorigin="anonymous"
     ></script>
-    <!-- style sheet linking -->
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="hero">
-      <!-- Navigation Bar setup -->
-      <nav>
-        <img src="images/logo-standard.png" />
-        <div class="nav-links">
-          <a href="#" class="active">My Feed</a>
-          <a href="#">Rex <span>NEW</span></a>
-          <form class="searchField">
-            <span>
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-            <input type="text" id="searchBar" placeholder="Search Hashnode" />
-          </form>
-          <div class="btnSetup">
-            <div class="btnframe">
-              <button class="LHS">
-                <i class="fa-solid fa-pen"></i>
-                <span>Write</span>
-              </button>
-              <span class="pipe">|</span>
-              <button class="RHS">
-                <span><i class="fa-solid fa-caret-down"></i></span>
-              </button>
-            </div>
-            <i class="fa-solid fa-code-branch"></i>
-            <i class="fa-regular fa-moon"></i>
-            <i class="fa-regular fa-bell"></i>
-          </div>
-          <div class="userProfile">
-            <span>I</span>
-          </div>
+    <nav class="navBar">
+      <div class="left-navBarside">
+        <a href="#home.html"
+          ><img src="images/logo-standard.png" class="logo"
+        /></a>
+        <div class="navBtn">
+          <a href="#">My Feed</a>
+          <a href="#">Rix <span>NEW</span></a>
         </div>
-      </nav>
-      <!-- Main framing -->
-      <section class="main">
-        <!-- left side -->
-        <div class="leftFrame">
-          <div class="navBarFrame">
-            <div class="navBar">
-              <i class="fa-solid fa-compass"></i>
-              <p>Explore</p>
-            </div>
-            <div class="navBar">
-              <i class="fa-solid fa-file-pen"></i>
-              <p>Drafts</p>
-            </div>
-            <div class="navBar">
-              <i class="fa-solid fa-book-bookmark"></i>
-              <p>Bookmark</p>
-            </div>
-            <div class="navBar">
-              <i class="fa-solid fa-display"></i>
-              <p>Hackathons</p>
-            </div>
-            <div class="navBar">
-              <i class="fa-solid fa-user-plus"></i>
-              <p>Team Blogs</p>
-            </div>
-            <div class="navBar">
-              <i class="fa-solid fa-angles-right"></i>
-              <p>More</p>
-            </div>
-          </div>
-          <hr />
-          <div class="trendSection">
-            <h3>Trending tags <i class="fa-solid fa-arrow-trend-up"></i></h3>
-            <div>
-              <p>Devops</p>
-              <span>+360</span>
-            </div>
-            <div>
-              <p>JavaScript</p>
-              <span>+299</span>
-            </div>
-            <div>
-              <p>Web Develo...</p>
-              <span>+250</span>
-            </div>
-            <div>
-              <p>React</p>
-              <span>+299</span>
-            </div>
-            <div>
-              <p>Linux</p>
-              <span>+250</span>
-            </div>
-            <div>
-              <p>Python</p>
-              <span>+299</span>
-            </div>
-            <div>
-              <a href="#">See all ></a>
-            </div>
-          </div>
+      </div>
+      <div class="center">
+        <div class="searchBar">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search Hashnode" />
         </div>
+      </div>
+      <div class="right-navBarside">
+        <div class="postBtn">
+          <a href=""><i class="fa-solid fa-pen"></i> <span>Write</span></a>
+          <!-- <p>|</p> -->
+          <a href=""
+            ><span><i class="fa-solid fa-caret-down"></i></span
+          ></a>
+        </div>
+        <div class="notifications">
+          <i class="fa-solid fa-code-branch"></i>
+          <i class="fa-regular fa-moon"></i>
+          <i class="fa-regular fa-bell"></i>
+        </div>
+        <div class="userProfile">
+          <img src="images/1450641462.png" alt="" />
+        </div>
+      </div>
+    </nav>
+    <!-- -----------------END OF NAV BAR--------------- -->
 
-        <!-- center info -->
-        <div class="centerFrame">
-          <div class="gallerySlider">
-            <div class="galleryFrame">
-              <div class="gallery">
-                <div class="userUpdate">
-                  <div class="fav-icon">
-                    <img src="images/baGQWmS_L.jpeg" alt="" class="newUpload" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="fav-icon">
-                    <img src="images/UC5fFN-71.png" alt="" class="newUpload" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="fav-icon">
-                    <img src="images/XVSmL_Ke8.jpeg" alt="" class="newUpload" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/RNtWdTIaP.png" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/o0WAH1qpC.jpeg" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/baGQWmS_L.jpeg" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/baGQWmS_L.jpeg" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/MNkI3CwHI.png" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/q79_-v2Yb.jpg" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/s2VTuTYFm.jpeg" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/pHsEYhW8N.png" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/s2VTuTYFm.jpeg" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/pHsEYhW8N.png" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/s2VTuTYFm.jpeg" alt="" />
-                  </div>
-                </div>
-                <div class="userUpdate">
-                  <div class="star-icon">
-                    <img src="images/pHsEYhW8N.png" alt="" />
-                  </div>
-                </div>
-              </div>
+    <div class="container">
+      <!-- -------------LHS---------------- -->
+      <div class="left-side-bar">
+        <div class="nav-links">
+          <div class="social-links">
+            <i class="fa-regular fa-compass"></i>
+            <div>
+              <a>Explore</a>
             </div>
           </div>
-          <div class="updateSection"></div>
+          <div class="social-links">
+            <i class="fa-solid fa-file-pen"></i>
+            <div>
+              <a>Drafts</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <i class="fa-solid fa-book-bookmark"></i>
+            <div>
+              <a>Bookmarks</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div>
+              <a>Hackathons</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <i class="fa-solid fa-user-plus"></i>
+            <div>
+              <a>Team Blogs</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <i class="fa-solid fa-angles-right"></i>
+            <div>
+              <a>More</a>
+            </div>
+          </div>
         </div>
-        <div class="rightFrame"></div>
-      </section>
+        <hr />
+        <div class="trends">
+          <p class="trending">
+            Trending tags <i class="fa-solid fa-arrow-trend-up"></i>
+          </p>
+          <div class="langauges">
+            <div class="lang">
+              <a href="#"
+                ><p>Devops</p>
+                <span>+385</span></a
+              >
+            </div>
+            <div class="lang">
+              <a href="#"
+                ><p>JavaScript</p>
+                <span>+321</span></a
+              >
+            </div>
+            <div class="lang">
+              <a href="#"
+                ><p>Web Develo...</p>
+                <span>+285</span></a
+              >
+            </div>
+            <div class="lang">
+              <a href="#"
+                ><p>Linux</p>
+                <span>+385</span></a
+              >
+            </div>
+            <div class="lang">
+              <a href="#"
+                ><p>React</p>
+                <span>+385</span></a
+              >
+            </div>
+            <div class="lang">
+              <a href="#"
+                ><p>Python</p>
+                <span>+385</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------CENTER--------------- -->
+      <div class="main-content"></div>
+      <!-- -----------------RHS---------------- -->
+      <div class="right-side-bar"></div>
     </div>
-    <!-- script file linking -->
-    <script src="script.js"></script>
   </body>
 </html>
